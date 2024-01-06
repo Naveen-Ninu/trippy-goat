@@ -159,6 +159,10 @@ body {
     line-height: 160%;
 }
 
+.cursor_pointer {
+    cursor: pointer;
+}
+
 .nav_icons {
     transition: all 0.2s linear !important;
 }
