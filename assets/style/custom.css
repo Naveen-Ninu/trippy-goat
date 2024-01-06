@@ -10,6 +10,7 @@ body {
     text-decoration: none !important;
     font-family: 'Potta One', cursive;
     overflow-x: hidden !important;
+    background-color: #1D1D1E;
 }
 
 .OverflowX_hidden {
@@ -343,6 +344,19 @@ nav li a:hover::after {
 }
 
 
+/* ---------- Goat Slide start ---------- */
+.common_goat_slide_img {
+    max-width: 203px;
+}
+
+.mt_53 {
+    margin-top: 53px;
+}
+
+.mt_104 {
+    margin-top: 104px;
+}
+
 /* ---------- MIn css start ---------- */
 .min_bg {
     background-image: url("/assets/images/png/mint_bg.png");
@@ -524,6 +538,10 @@ nav li a:hover::after {
 @media (max-width: 1598px) {}
 
 @media (max-width: 1199.98px) {
+    .common_goat_slide_img {
+        max-width: 171px;
+    }
+
     .faq_left_img {
         width: 157px;
     }
@@ -534,6 +552,10 @@ nav li a:hover::after {
 }
 
 @media (max-width: 991.98px) {
+    .common_goat_slide_img {
+        max-width: 154px;
+    }
+
     .max_w_964 {
         max-width: 635px;
         margin: 0 auto;
@@ -575,6 +597,18 @@ nav li a:hover::after {
 }
 
 @media (max-width: 576px) {
+    .mt_104 {
+        margin-top: 63px;
+    }
+
+    .mt_53 {
+        margin-top: 30px;
+    }
+
+    .common_goat_slide_img {
+        max-width: 124px;
+    }
+
     .team_care_parent {
         max-width: 330px;
     }
