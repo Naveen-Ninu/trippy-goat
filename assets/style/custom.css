@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=M+PLUS+1:wght@400;600;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -23,17 +22,13 @@ body {
     --color-light-graytwo: #F3F3F3;
     --color-light: #ffffff;
     --font-xs: 16px;
-    --font-2xs: 18px;
-    --font-sm: 20px;
-    --font-2sm: 22px;
+    --font-sm: 18px;
+    --font-base: 20px;
     --font-md: 24px;
-    --font-2md: 25px;
-    --font-3md: 30px;
-    --font-4md: 35px;
+    --font-2md: 36px;
     --font-lg: 40px;
-    --font-xl: 50px;
-    --font-2xl: 61px;
-    --font-3xl: 90px;
+    --font-xl: 48px;
+    --font-2xl: 64px;
 }
 
 /*--------------------- DEFINE-ALL = ROOT-VALUE ------------------------------ */
@@ -54,16 +49,12 @@ body {
     font-size: var(--font-xs) !important;
 }
 
-.font-2xs {
-    font-size: var(--font-2xs) !important;
-}
-
 .font-sm {
     font-size: var(--font-sm) !important;
 }
 
-.font-2sm {
-    font-size: var(--font-2sm) !important;
+.font-base {
+    font-size: var(--font-base) !important;
 }
 
 .font-md {
@@ -72,14 +63,6 @@ body {
 
 .font-2md {
     font-size: var(--font-2md) !important;
-}
-
-.font-3md {
-    font-size: var(--font-3md) !important;
-}
-
-.font-4md {
-    font-size: var(--font-4md) !important;
 }
 
 .font-lg {
@@ -94,105 +77,61 @@ body {
     font-size: var(--font-2xl) !important;
 }
 
-.font-3xl {
-    font-size: var(--font-3xl) !important;
-}
-
-
 /*---------------------------- DEFINE-ALL = FONT-WEIGHT ---------------------------- */
-
-.fw_medium {
-    font-weight: 500 !important;
-}
 
 .fw_semibold {
     font-weight: 600 !important;
 }
 
 /*---------------------------- DEFINE-ALL = FONT-FAMILY---------------------------- */
-@font-face {
-    font-family: gilroy-Regular;
-    src: url("/assets/fonts/Gilroy-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
+
+.ff_m_plus {
+    font-family: 'M PLUS 1', sans-serif;
 }
 
-@font-face {
-    font-family: gilroy-semibold;
-    src: url("/assets/fonts/Gilroy-SemiBold.ttf");
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: gilroy-medium;
-    src: url("/assets/fonts/Gilroy-Medium.ttf");
-    font-weight: 500;
-    font-style: normal;
-}
-
-.ff_gilroy_Regular {
-    font-family: gilroy-Regular !important;
-}
-
-.ff_gilroy_medium {
-    font-family: gilroy-medium !important;
-}
-
-.ff_gilroy_semibold {
-    font-family: gilroy-semibold !important;
-}
-
-
-.ff_dm {
-    font-family: 'DM Sans', sans-serif !important;
+.ff_black_han {
+    font-family: 'Black Han Sans', sans-serif;
 }
 
 /*----------------- FONT SIZE-SET --------------------  */
 
 @media (max-width:1599.98px) {
     :root {
-        --font-sm: 20px;
-        --font-2sm: 17px;
-        --font-4md: 30px;
-        --font-3md: 27px;
+        --font-xs: 16px;
+        --font-sm: 18px;
+        --font-base: 20px;
     }
 }
 
 @media (max-width:1199.98px) {
     :root {
-        --font-2xs: 16px;
-        --font-2sm: 17px;
+        --font-xs: 16px;
         --font-sm: 18px;
-        --font-3md: 27px;
-        --font-xl: 40px;
+        --font-base: 20px;
     }
 }
 
 @media (max-width: 991.98px) {
     :root {
-        --font-sm: 16px;
-        --font-3md: 20px;
-        --font-2sm: 18px;
+        --font-xs: 16px;
+        --font-sm: 18px;
+        --font-base: 20px;
     }
 }
 
 @media (max-width: 767.98px) {
     :root {
         --font-xs: 16px;
-        --font-2xs: 18px;
-        --font-2xl: 61px;
-        --font-3xl: 90px;
+        --font-sm: 18px;
+        --font-base: 20px;
     }
 }
 
 @media (max-width: 575.98px) {
     :root {
-        --font-2sm: 14px;
         --font-xs: 16px;
-        --font-md: 22px;
-        --font-2xs: 18px;
-        --font-xl: 38px;
+        --font-sm: 18px;
+        --font-base: 20px;
     }
 }
 
