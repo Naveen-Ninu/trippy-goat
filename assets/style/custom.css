@@ -131,8 +131,8 @@ body {
     overflow: hidden !important;
 }
 
-.opacity_07 {
-    opacity: 0.7 !important;
+.opacity_08 {
+    opacity: 0.8 !important;
 }
 
 .transition {
@@ -339,7 +339,45 @@ nav li a:hover::after {
 }
 
 
-/* ----------Faq css start ---------- */
+/* ---------- MIn css start ---------- */
+.min_bg {
+    background-image: url("/assets/images/png/mint_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.min_box {
+    padding: 39px 0 30px 0;
+    max-width: 458px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 4px 16px 0px rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(18.5px);
+}
+
+/* ---------- Team css start ---------- */
+.team_card_heading {
+    text-shadow: 2px 6px 7px rgba(0, 0, 0, 0.02);
+}
+
+.hover_scale:hover {
+    transform: scale(1.05);
+}
+
+.team_care_parent {
+    max-width: 294px;
+}
+
+.team_care_parent1 {
+    border-radius: 0px 0px 0px 63.002px;
+}
+
+.team_care_parent3 {
+    border-radius: 0px 0px 63.002px 0px;
+}
+
+/* ---------- Faq css start ---------- */
 .faq_parent {
     max-width: 670px;
     padding: 80px 0 89px;
@@ -465,6 +503,11 @@ nav li a:hover::after {
         max-width: 1140px !important;
         margin: auto;
     }
+
+    .max_w_964 {
+        max-width: 962px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -487,6 +530,11 @@ nav li a:hover::after {
 }
 
 @media (max-width: 991.98px) {
+    .max_w_964 {
+        max-width: 635px;
+        margin: 0 auto;
+    }
+
     .faq_left_img {
         top: 90%;
         z-index: 1;
@@ -523,6 +571,10 @@ nav li a:hover::after {
 }
 
 @media (max-width: 576px) {
+    .team_care_parent {
+        max-width: 330px;
+    }
+
     .pt_126 {
         padding-top: 48px;
     }
