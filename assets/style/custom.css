@@ -132,6 +132,10 @@ body {
     overflow: hidden !important;
 }
 
+.opacity_07 {
+    opacity: 0.7 !important;
+}
+
 .opacity_08 {
     opacity: 0.8 !important;
 }
@@ -200,6 +204,27 @@ body {
     background-color: var(--color-orange) !important;
     display: inline-block;
     border: transparent;
+}
+
+.border_nav_btn {
+    border: 1px solid white !important;
+    padding: 6px;
+    border-radius: 2px;
+}
+
+.border_nav_btn::after {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 38px;
+    background-color: #1D1D1E;
+    height: 5px;
+    width: 30px;
+    transition: all 0.2s linear !important;
+}
+
+.border_nav_btn:hover::after {
+    width: 0 !important;
 }
 
 /*  ------------------ BACK-TO-TOP-CSS ------------------ */
@@ -344,6 +369,23 @@ nav li a:hover::after {
 }
 
 
+/* ---------- About Css start ----------- */
+.about_img {
+    max-width: 433px !important;
+}
+
+.about_right_shade {
+    max-height: 400px;
+    z-index: -1;
+}
+
+.about_right_object {
+    max-width: 210px;
+    max-height: 295px;
+    z-index: -1;
+    bottom: -5%;
+}
+
 /* ---------- Goat Slide start ---------- */
 .common_goat_slide_img {
     max-width: 203px;
@@ -372,6 +414,14 @@ nav li a:hover::after {
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0px 4px 16px 0px rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(18.5px);
+}
+
+.border_nav_btn::after {
+    background-color: #574A2E;
+}
+
+.border_nav_btn2::after {
+    background-color: #1D1D1E;
 }
 
 /* ---------- Team css start ---------- */
@@ -481,7 +531,7 @@ nav li a:hover::after {
 
 /* ---------FOOTER CSS START  --------- */
 .faq_bg {
-    background-image: url("/assets/images/png/faq_bg.png");
+    background-image: url("/assets/images/png/footer_bg_img.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -535,8 +585,6 @@ nav li a:hover::after {
     }
 }
 
-@media (max-width: 1598px) {}
-
 @media (max-width: 1199.98px) {
     .common_goat_slide_img {
         max-width: 171px;
@@ -552,6 +600,11 @@ nav li a:hover::after {
 }
 
 @media (max-width: 991.98px) {
+    .about_right_object {
+        max-height: 170px;
+        bottom: -8%;
+    }
+
     .common_goat_slide_img {
         max-width: 154px;
     }
@@ -597,6 +650,11 @@ nav li a:hover::after {
 }
 
 @media (max-width: 576px) {
+    .about_right_object {
+        max-height: 120px;
+        bottom: -8%;
+    }
+
     .mt_104 {
         margin-top: 63px;
     }
@@ -644,17 +702,4 @@ nav li a:hover::after {
         bottom: 8px;
         right: 18px;
     }
-}
-
-/* Hero CSS */
-.hero_bg {
-    background-image: url("../images/png/hero_bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.hero_goat {
-    max-width: 550px;
-    max-height: 524px;
 }

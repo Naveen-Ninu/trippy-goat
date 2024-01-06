@@ -38,3 +38,6 @@ const sidebar = document.querySelector(".overlay");
       document.body.classList.remove("overflow_hidden");
       document.body.classList.remove("vh-100");
 }
+
+document.getElementById("current_year").innerHTML =
+      new Date().getFullYear();
