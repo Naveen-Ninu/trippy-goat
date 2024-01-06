@@ -21,15 +21,9 @@
         <!-- ==================== Bootstrap CSS ===========================-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <!-- =============================== SLIDER LINK HERE ========================================= -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-            integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-            integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- ================= CSS LINK HERE ============================== -->
-        <link rel="stylesheet" href="/assets/style/custom.css" />
+        <!-- <link rel="stylesheet" href="/assets/style/custom.css" /> -->
+        <link rel="stylesheet" href="/assets/style/demo.css" />
         <!-- DEFINE FAVICON -->
         <link rel="shortcut icon" href="./assets/images/svg/fav-icon.svg" type="image/x-icon">
         <!-- ===================== AOS-ANIMATION-LINK ====================== -->
@@ -37,84 +31,199 @@
     </head>
 
     <body>
-
-        <!--======================== Hero Start ===========================-->
-        <header class="index_5 position-relative">
-            <nav class="position-relative nav_spacing">
-                <div class="container custom_container custom_container_xxl">
-                    <div class="d-flex align-items-center justify-content-between justify-content-md-end">
-                        <div class="d-flex">
-                            <ul class="list-unstyled d-md-flex align-items-center mb-0 d-none">
-                                <li class="lg_nav_link pe-1">
-                                    <a class="font-xs fw-normal font-sm transition text-white text-decoration-none position-relative"
-                                        href="#about">About</a>
-                                </li>
-                                <li class="lg_nav_link pe-1">
-                                    <a class="font-xs fw-normal font-sm transition text-white text-decoration-none position-relative"
-                                        href="#roadMap">RoadMap</a>
-                                </li>
-                                <li class="lg_nav_link pe-1">
-                                    <a class="font-xs fw-normal font-sm transition text-white text-decoration-none position-relative"
-                                        href="#buy">How To Buy</a>
-                                </li>
-                                <li class="lg_nav_link pe-1">
-                                    <a class="font-xs fw-normal font-sm transition text-white text-decoration-none position-relative"
-                                        href="#team">Team</a>
-                                </li>
-                                <li class="lg_nav_link me-4">
-                                    <a class=" font-xs fw-normal font-sm transition text-white text-decoration-none position-relative"
-                                        href="#faqs">FAQs</a>
-                                </li>
-                            </ul>
-                            <button class="ms-lg-4 ms-lg-0 connect_btn text-white transition fw-normal ms-lg-1">
-                                Connect
-                                wallet</button>
-                        </div>
-                        <div class="overlay position-fixed d-flex d-md-none flex-column justify-content-center align-items-center w-100"
-                            id="overlay">
-                            <ul class="p-0 text-center">
-                                <li class="mb-4 list-unstyled" onclick="hideNav()">
-                                    <a class="font-sm fw-normal text-white opacity_07 text-decoration-none position-relative"
-                                        href="#about">About</a>
-                                </li>
-                                <li class="mb-4 list-unstyled" onclick="hideNav()">
-                                    <a class="font-sm fw-normal text-white opacity_07 text-decoration-none position-relative"
-                                        href="#roadMap">RoadMap</a>
-                                </li>
-                                <li class="mb-4 list-unstyled" onclick="hideNav()">
-                                    <a class="font-sm fw-normal text-white opacity_07 text-decoration-none position-relative"
-                                        href="#buy">How To Buy</a>
-                                </li>
-                                <li class="mb-4 list-unstyled" onclick="hideNav()">
-                                    <a class="font-sm fw-normal text-white opacity_07 text-decoration-none position-relative"
-                                        href="#team">Team</a>
-                                </li>
-                                <li class="mb-4 list-unstyled" onclick="hideNav()">
-                                    <a class="font-sm fw-normal text-white opacity_07 text-decoration-none position-relative"
-                                        href="#faqs">FAQs</a>
-                                </li>
-                                <li class="mb-4 list-unstyled" onclick="hideNav()">
-                                    <button class="ms-lg-4 ms-lg-0 connect_btn text-white transition fw-normal ms-lg-1">
+        <!-- HEADER START -->
+        <header class="index_5 position-sticky">
+            <nav class="py-2">
+                <div class="custom_container">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <a href="/"><img src="./assets/images/svg/nav_logo.svg" alt="logo"></a>
+                        <div class="d-flex align-items-center justify-content-between justify-content-md-end">
+                            <div class="d-flex align-items-center">
+                                <ul class="list-unstyled d-md-flex align-items-center mb-0 d-none">
+                                    <li class="lg_nav_link">
+                                        <a class="font-xs fw_semibold ff_m_plus transition text-white text-decoration-none position-relative"
+                                            href="#home">Home</a>
+                                    </li>
+                                    <li class="lg_nav_link">
+                                        <a class="font-xs fw_semibold ff_m_plus transition text-white text-decoration-none position-relative"
+                                            href="#about">About</a>
+                                    </li>
+                                    <li class="lg_nav_link">
+                                        <a class="font-xs fw_semibold ff_m_plus transition text-white text-decoration-none position-relative"
+                                            href="#team">Team</a>
+                                    </li>
+                                    <li class="lg_nav_link">
+                                        <a class=" font-xs fw_semibold ff_m_plus transition text-white text-decoration-none position-relative"
+                                            href="#roadMap">RoadMap</a>
+                                    </li>
+                                    <li class="lg_nav_link me-4">
+                                        <a class=" font-xs fw_semibold ff_m_plus transition text-white text-decoration-none position-relative"
+                                            href="#faq">FAQ</a>
+                                    </li>
+                                </ul>
+                                <div class="d-flex gap-3 me-4 pe-2">
+                                    <a class="nav_icons" href="#"> <img src="./assets/images/svg/insta.svg"
+                                            alt="insta"></a>
+                                    <a class="mx-1 nav_icons" href="#"> <img src="./assets/images/svg/discord.svg"
+                                            alt="discord.svg"></a>
+                                    <a class="nav_icons" href="#"> <img src="./assets/images/svg/twitter.svg"
+                                            alt="twitter.svg"></a>
+                                </div>
+                                <a href="#" class="border_connect_btn position-relative">
+                                    <button class="font-xs fw-normal ff_black_han connect_btn text-white transition">
                                         Connect
                                         wallet</button>
-                                </li>
-                            </ul>
-                            <button class="cross_btn ff_reachare border-0 bg-transparent position-absolute"
-                                onclick="hideNav()">
-                                <img onclick="hideNav()" class="d-xl-none d-block"
-                                    src="/assets/images/svg/cross_icon.svg" alt="cross-icon" />
-                            </button>
-                        </div>
-                        <div onclick="Togleside()"
-                            class="d-md-none nav_toggle_icon border-0 bg-transparent position-relative" id="toggle_btn">
-                            <span class="line1 position-absolute start-0 top-0 rounded-pill"></span>
-                            <span class="line2 position-absolute start-0 top-50 translate-middle-y rounded-pill"></span>
-                            <span class="line3 position-absolute start-0 bottom-0 rounded-pill"></span>
+                                </a>
+                            </div>
+                            <div class="overlay position-fixed d-flex d-md-none flex-column justify-content-center align-items-center w-100"
+                                id="overlay">
+                                <ul class="p-0 text-center">
+                                    <li class="mb-4 list-unstyled" onclick="hideNav()">
+                                        <a class="fw-normal text-white opacity_07 text-decoration-none position-relative"
+                                            href="#home">Home</a>
+                                    </li>
+                                    <li class="mb-4 list-unstyled" onclick="hideNav()">
+                                        <a class="fw-normal text-white opacity_07 text-decoration-none position-relative"
+                                            href="#about">About</a>
+                                    </li>
+                                    <li class="mb-4 list-unstyled" onclick="hideNav()">
+                                        <a class="fw-normal text-white opacity_07 text-decoration-none position-relative"
+                                            href="#team">Team</a>
+                                    </li>
+                                    <li class="mb-4 list-unstyled" onclick="hideNav()">
+                                        <a class="fw-normal text-white opacity_07 text-decoration-none position-relative"
+                                            href="#roadMap">RoadMap</a>
+                                    </li>
+                                    <li class="mb-4 list-unstyled" onclick="hideNav()">
+                                        <a class="fw-normal text-white opacity_07 text-decoration-none position-relative"
+                                            href="#faq">FAQ</a>
+                                    </li>
+                                    <li class="mb-4 list-unstyled" onclick="hideNav()">
+                                        <a href="#" class="border_connect_btn position-relative">
+                                            <button
+                                                class="font-xs fw-normal ff_black_han connect_btn text-white transition">
+                                                Connect
+                                                wallet</button>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button class="cross_btn ff_reachare border-0 bg-transparent position-absolute"
+                                    onclick="hideNav()">
+                                    <img onclick="hideNav()" class="d-xl-none d-block"
+                                        src="/assets/images/svg/cross_icon.svg" alt="cross-icon" />
+                                </button>
+                            </div>
+                            <div onclick="Togleside()"
+                                class="d-md-none nav_toggle_icon border-0 bg-transparent position-relative"
+                                id="toggle_btn">
+                                <span class="line1 position-absolute start-0 top-0 rounded-pill"></span>
+                                <span
+                                    class="line2 position-absolute start-0 top-50 translate-middle-y rounded-pill"></span>
+                                <span class="line3 position-absolute start-0 bottom-0 rounded-pill"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
+        <!-- HEADER END -->
+
+
+        <!-- ======================== FOOTER START ======================== -->
+        <footer class="footer_bg bg-dark position-relative">
+            <img class="position-absolute index_1 bottom-0 end-0" src="/assets/images/png/footer_bottom_right_grass.png"
+                alt="footer_bottom_right_grass">
+            <img class="position-absolute index_1 bottom-0 start-0"
+                src="/assets/images/png/footer_bottom_left_grass.png" alt="footer_bottom_right_grass">
+            <div class="container custom_container">
+
+                <!-------------------- Faq start ------------------ -->
+                <h2 class="sub_heading">FAQs</h2>
+                <div class="faq_parent mx-auto">
+                    <div class="accordion bg-transparent" id="accordionExample">
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button font-base text-white ff_m_plus fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    What are Trippy Goats?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-white ff_m_plus fw-normal font-xs">Trippy goats are 5656
+                                    goats looking to trip with
+                                    everyone in
+                                    the metaverse. This genesis collection will give exclusive
+                                    access to the trippyverse. The mission is to create a community who seek the peak,
+                                    while finding a peace of mind. Save
+                                    the world. Lets invade the blockchain farm while trippin
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent my_20">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed font-base text-white ff_m_plus fw-bold"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    When will I be able to mint a trippy Goat NFT?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-white ff_m_plus fw-normal font-xs">Trippy goats are 5656
+                                    goats looking to trip with
+                                    everyone in
+                                    the metaverse. This genesis collection will give exclusive
+                                    access to the trippyverse. The mission is to create a community who seek the peak,
+                                    while finding a peace of mind. Save
+                                    the world. Lets invade the blockchain farm while trippin
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed font-base text-white ff_m_plus fw-bold"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    Why do I have to own a trippy Goat NFT?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-white ff_m_plus fw-normal font-xs">Trippy goats are 5656
+                                    goats looking to trip with
+                                    everyone in
+                                    the metaverse. This genesis collection will give exclusive
+                                    access to the trippyverse. The mission is to create a community who seek the peak,
+                                    while finding a peace of mind. Save
+                                    the world. Lets invade the blockchain farm while trippin </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center pt_126">
+                    <img src="/assets/images/svg/footer_logo.svg" alt="footer_logo text-center">
+                    <p class="para_m fw-normal text-white ff_m_plus mx-auto my-4 py-2">Vitae cras pellentesque amet,
+                        pretium
+                        ut
+                        consectetur
+                        pretium orci
+                        arcu. Aenean turpis
+                        ipsum nunc
+                        adipiscing fusce enim,
+                        eget rhoncus at.</p>
+                    <div class="icon_parent">
+                        <a href="#"> <img src="/assets/images/svg/insta.svg" alt="insta"></a>
+                        <a href="#" class="mx-2"> <img src="/assets/images/svg/discord.svg" alt="discord"></a>
+                        <a href="#"> <img src="/assets/images/svg/twitter.svg" alt="twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <span class="bottom_line d-block"></span>
+            <p class="text-center mb-0 text-white ff_m_plus py_12 lh_160">copyright@2022</p>
+        </footer>
 
         <!-- ======================== Back-To-Top ======================== -->
         <a href="#" id="scroll" class="bg_blue_gradient" style="display: none">
@@ -126,13 +235,6 @@
         <!-- ======================= Jquery Link  ======================= -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
             integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- =================================== SLIDER LINK HERE ============================================ -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- ========================= BOOTSTRAP LINK ================== -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
